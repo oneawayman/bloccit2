@@ -42,6 +42,8 @@ gem 'slim'
 
 gem 'bootstrap-sass', '~> 3.1.1'
 
+gem 'faker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
