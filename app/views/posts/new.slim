@@ -1,0 +1,19 @@
+h1 New Post
+
+.row
+  .col-md-4
+    p Guidelines for posts
+    ul 
+      li Make sure it rhymes
+      li Make sure to smoke a big spliff before posting
+      li One love
+  .col-md-8
+    = form_for ([@post]) do |f|
+      .form-group
+        = f.label :title
+        = f.text_field :title, class: 'form-control', placeholder: "Enter post title"
+      .form-group 
+        = f.label :body
+        = f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter post body"
+      .form-group   
+        = f.submit "Save", class: 'btn btn-success'

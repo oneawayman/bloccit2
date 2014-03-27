@@ -1,6 +1,5 @@
-html
-  h1 All Posts
+h1 All Posts
+.media
 - @posts.each do |post| 
-    .media
       .media-body
         h4.media-heading == link_to post.title, post
