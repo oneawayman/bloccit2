@@ -4,13 +4,13 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-   config.secret_key = 'b4d6bcfbb60f91c4bf54ba074dae55911d7bf79ea04b36eada3b6f0f0fa420d5c509bff00c39626e6d985e296e0bae0e569c1bb1e0ff0a25243db7c72c1ccf5d'
+  # config.secret_key = 'b4d6bcfbb60f91c4bf54ba074dae55911d7bf79ea04b36eada3b6f0f0fa420d5c509bff00c39626e6d985e296e0bae0e569c1bb1e0ff0a25243db7c72c1ccf5d'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'yoav@bloccit.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -222,7 +222,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
