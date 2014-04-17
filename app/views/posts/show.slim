@@ -9,6 +9,15 @@ h1 = markdown @post.title
       = @post.user.name
     p = markdown @post.body
     p = image_tag(@post.image_url) if @post.image?
+    h2 = @comments.count 
+    | Comments
+
+    = render @post.comments, template: "comments/comments"
+
+      - if can? :create, Comment 
+      
+       h4 New Comment
+       = render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment }
   .col-md-4
     - if policy(@post).edit?
       = link_to "Edit", edit_topic_post_path(@topic,@post), class: 'btn btn-success'
